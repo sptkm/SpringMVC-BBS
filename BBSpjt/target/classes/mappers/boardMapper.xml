@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.bbspjt.mapper.BoardMapper">
+ 
+	<insert id="create">
+	 insert into board(bdTitle, bdContent, bdWriter) 
+	 values(#{bdTitle},#{bdContent},#{bdWriter})
+	</insert>
+  	
+  	<select id="read" resultType="org.bbspjt.domain.BoardVO">
+  	select
+  		bdID, bdTitle, bdWriter, bdDate, bdContent
+  	from
+		board
+ 	where bdID = #{bdID}
+  	</select>
+
+	<update id="update">
+	 update board set bdTitle = #{bdTitle}, bdContent = #{bdContent}
+	 where bdID = #{bdID}
+	</update>
+	
+	<delete id="delete">
+	delete from board where bdID = #{bdID}
+	</delete>
+	
+	<select id="listAll" resultType="org.bbspjt.domain.BoardVO">
+	<![CDATA[
+	select
+		bdID, bdTitle, bdWriter, bdDate, bdContent
+	from
+		board
+	where bdID > 0
+	order by bdID desc, bdDate desc
+	]]>
+	</select>
+</mapper>

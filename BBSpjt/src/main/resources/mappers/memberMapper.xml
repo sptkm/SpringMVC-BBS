@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.bbspjt.mapper.MemberMapper">
+	
+	<insert id="insertMember">
+		insert into member(memID,memPW,memName,memGender,memMail) values 
+		(#{memID},#{memPW},#{memName},#{memGender},#{memMail})
+	</insert>
+	
+	<select id="loginCheck" resultType="String">
+	select
+		memID
+	from
+		member
+	where memID = #{memID} AND memPW = #{memPW}
+	</select>
+	
+</mapper>
