@@ -32,7 +32,7 @@
             }
             if(memName == ""){
                 alert("お名前を入力してください");
-                $("#memPW").focus();
+                $("#memName").focus();
                 return;
             }
             document.form2.action="${path}/insert"
