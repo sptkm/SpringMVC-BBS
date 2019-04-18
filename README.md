@@ -1,7 +1,9 @@
 # SpringMVC-BBS
 
 ## Program stacks
-* Eclipse(EE)
+* JAVA
+* JSP
+* Spring framwork(MVC2)
 * mySQL
 * javascript
 * bootstrap
