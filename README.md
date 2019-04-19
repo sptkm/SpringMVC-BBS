@@ -6,5 +6,3 @@
 * mySQL
 * javascript
 * bootstrap
-* CSS
-* HTML
