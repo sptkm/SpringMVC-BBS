@@ -4,5 +4,4 @@
 * JAVA
 * Spring framwork(MVC2/Maven/MyBatis)
 * mySQL
-* javascript
 * bootstrap
