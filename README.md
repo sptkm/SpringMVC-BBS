@@ -2,8 +2,7 @@
 
 ## Program stacks
 * JAVA
-* Spring framwork(MVC2/Maven/MyBatis)
-*
+* Spring framwork(MVC2/Maven/MyBatis)  
 ☑ Spring 5.0
 ☑ JDK 1.8
 ☑ Tomcat 8.5
